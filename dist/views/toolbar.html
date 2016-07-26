@@ -1,0 +1,44 @@
+<md-toolbar class="md-hue-2">
+    <div class="md-toolbar-tools">
+        <md-button class="md-icon-button" hide-gt-sm ng-click="vm.toggleSideNav()" " >
+        <md-icon md-svg-icon="menu " ></md-icon>
+          <!--<md-icon md-svg-icon="./assets/svg/menu.svg "></md-icon>-->
+   
+        </md-button>
+        <h2>
+          <span>Cyian Contact App</span>
+        </h2>
+        <span flex></span>
+        <md-button class="md-icon-button " aria-label="Favorite ">
+          <md-icon md-svg-icon="./assets/svg/favorite.svg" style="color: greenyellow; "></md-icon>
+          
+        </md-button>
+        <md-button class="md-icon-button " aria-label="Settings ">
+          <md-icon md-svg-icon="./assets/svg/settings.svg"></md-icon>          
+        </md-button>
+        <md-fab-speed-dial 
+            md-direction="down "
+            class="md-fling md-fab-top-right ">
+            <md-fab-trigger>
+                <md-button class="md-fab ">
+                    <md-icon md-svg-icon="menu "></md-icon>
+                </md-button>
+            </md-fab-trigger>
+            <md-fab-actions>
+                <md-button class="md-fab md-raised md-mini "
+                    ng-click="vm.showContactOptions($event)">
+                    <ng-md-icon icon="face " ></ng-md-icon>
+                    <md-tooltip md-direction="left">Contact</md-tooltip>
+                </md-button>
+                <md-button class="md-fab md-raised md-mini "
+                ng-click="vm.clearNotes($event)" >
+                    <ng-md-icon icon="clear_all " ></ng-md-icon>
+                    <md-tooltip md-direction="left">Clear All</md-tooltip>
+                </md-button>
+                <!--<md-button class="md-fab md-raised md-mini ">
+                    <ng-md-icon icon="face " ></ng-md-icon>
+                </md-button>-->
+            </md-fab-actions>
+        </md-fab-speed-dial>
+      </div>
+    </md-toolbar>
